@@ -1,14 +1,14 @@
 ---
 id: faq-styling
-title: Styling and CSS
+title: Stil ve CSS
 permalink: docs/faq-styling.html
 layout: docs
 category: FAQ
 ---
 
-### How do I add CSS classes to components? {#how-do-i-add-css-classes-to-components}
+### Bileşenlere CSS sınıflarını nasıl eklerim? {#how-do-i-add-css-classes-to-components}
 
-Pass a string as the `className` prop:
+Prop ile `className`'e metin gönderimi:
 
 ```jsx
 render() {
@@ -16,7 +16,7 @@ render() {
 }
 ```
 
-It is common for CSS classes to depend on the component props or state:
+Bileşenlere prop ya da state'leri yaygın bir şekildeki bağlanışı:
 
 ```jsx
 render() {
@@ -28,24 +28,24 @@ render() {
 }
 ```
 
->Tip
+>İpucu
 >
->If you often find yourself writing code like this, [classnames](https://www.npmjs.com/package/classnames#usage-with-reactjs) package can simplify it.
+>Sık sık kendinize böyle bir kod yazarken bulursanız, [classnames](https://www.npmjs.com/package/classnames#usage-with-reactjs) basitleştirmeyi okuyunuz.
 
-### Can I use inline styles? {#can-i-use-inline-styles}
+### Satır içi stilleri kullanabilir miyim? {#can-i-use-inline-styles}
 
-Yes, see the docs on styling [here](/docs/dom-elements.html#style).
+Evet, [buradan](/docs/dom-elements.html#style) şekillendirme ile ilgili belgelere bakın .
 
-### Are inline styles bad? {#are-inline-styles-bad}
+### Satır içi stil kullanımı kötü mü? {#are-inline-styles-bad}
 
-CSS classes are generally better for performance than inline styles.
+CSS sınıfları performans için satır içi stillerden daha iyidir.
 
-### What is CSS-in-JS? {#what-is-css-in-js}
+### CSS-in-JS nedir? {#what-is-css-in-js}
 
-"CSS-in-JS" refers to a pattern where CSS is composed using JavaScript instead of defined in external files. Read a comparison of CSS-in-JS libraries [here](https://github.com/MicheleBertoli/css-in-js).
+"CSS-in-JS" CSS'in harici dosyalarda tanımlanmak yerine JavaScript kullanarak oluşturulduğu bir deseni ifade eder. JS'deki CSS kitaplıklarının karşılaştırmasını [buradan okuyun.](https://github.com/MicheleBertoli/css-in-js).
 
-_Note that this functionality is not a part of React, but provided by third-party libraries._ React does not have an opinion about how styles are defined; if in doubt, a good starting point is to define your styles in a separate `*.css` file as usual and refer to them using [`className`](/docs/dom-elements.html#classname).
+_Bu işlevselliğin React'in bir parçası olmadığını, ancak üçüncü taraf kütüphaneler tarafından sağlandığını unutmayın. React, stillerin nasıl tanımlanması gerektiği hakkında görüşe sahip değildir; Şüpheniz varsa, stillerinizi her zamanki gibi ayrı bir `*.css` dosyasında tanımlamak ve [`className`](/docs/dom-elements.html#classname) kullanarak bunlara başvurmak iyi bir başlangıç noktasıdır.
 
-### Can I do animations in React? {#can-i-do-animations-in-react}
+### React'te animasyon yapabilir miyim? {#can-i-do-animations-in-react}
 
-React can be used to power animations. See [React Transition Group](https://reactcommunity.org/react-transition-group/) and [React Motion](https://github.com/chenglou/react-motion) or [React Spring](https://github.com/react-spring/react-spring), for example.
+React animasyonları güçlendirmek için kullanılabilir. Bakınız [React Transition Group](https://reactcommunity.org/react-transition-group/) ve [React Motion](https://github.com/chenglou/react-motion) ya da [React Spring](https://github.com/react-spring/react-spring), bunun için örnektir.
